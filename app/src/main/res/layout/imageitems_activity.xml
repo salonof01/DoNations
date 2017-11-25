@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fbe2cb"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/donorName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f5c4c4"
+        android:gravity="center"
+        android:hint="Donor Name"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/imgView"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_margin="24dp"
+        android:layout_marginTop="25dp"
+        android:adjustViewBounds="true"
+        android:cropToPadding="true"
+        android:scaleType="fitCenter" />
+
+    <TextView
+        android:id="@+id/conditionText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#eff3a7"
+        android:gravity="center"
+        android:hint="Donation Description"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/pickUpAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#b2f9d4"
+        android:gravity="center"
+        android:hint="Pickup Address"
+        android:textSize="18sp" />
+
+
+</LinearLayout>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.onofre.salvador.donations.CategoPictureTakenActivity"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="81dp">
+
+    <Spinner
+        android:id="@+id/spinnerDonationPlace"
+        android:layout_width="171dp"
+        android:layout_height="25dp"
+        android:layout_marginBottom="45dp"
+        android:layout_marginLeft="57dp"
+        android:layout_marginRight="58dp"
+        android:layout_marginTop="44dp"
+        android:entries="@array/donationPlace"
+        android:textAlignment="viewStart"
+        app:layout_constraintBottom_toBottomOf="@+id/textCategory"
+        app:layout_constraintLeft_toRightOf="@+id/textView3"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/takePictureButton"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <EditText
+        android:id="@+id/editTextAddress"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="66dp"
+        android:ems="10"
+        android:hint="@string/pick_up_address"
+        android:inputType="textPersonName"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/donationdescript"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1" />
+
+    <ImageView
+        android:id="@+id/pictureTaken"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="47dp"
+        android:layout_marginRight="47dp"
+        android:layout_marginTop="13dp"
+        android:background="#f4f7e4"
+        android:contentDescription=""
+        app:layout_constraintBottom_toTopOf="@+id/takePictureButton"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.555"
+        tools:ignore="ContentDescription"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <Button
+        android:id="@+id/takePictureButton"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="170dp"
+        android:elevation="0dp"
+        android:onClick="dispatchTakePictureIntent"
+        android:text="@string/take_a_picture"
+        android:textSize="10sp"
+        app:layout_constraintHorizontal_bias="0.459"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <Button
+        android:id="@+id/buttonMakeDonation"
+        android:layout_width="105dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="7dp"
+        android:background="#faf8d6"
+        android:elevation="20dp"
+        android:text="Make Donation"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintRight_creator="1" />
+
+    <Spinner
+        android:id="@+id/spinnerCategory"
+        android:layout_width="195dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="55dp"
+        android:layout_marginTop="92dp"
+        android:entries="@array/categories"
+        app:layout_constraintHorizontal_bias="0.785"
+        app:layout_constraintLeft_toRightOf="@+id/textCategory"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/takePictureButton"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <TextView
+        android:id="@+id/textCategory"
+        android:layout_width="79dp"
+        android:layout_height="29dp"
+        android:layout_marginBottom="31dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="270dp"
+        android:text="Category:"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/donationdescript"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="16dp"
+        android:text="Donate to:"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/textCategory"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1" />
+
+    <EditText
+        android:id="@+id/editTextPhone"
+        android:layout_width="149dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="9dp"
+        android:layout_marginTop="6dp"
+        android:ems="10"
+        android:hint="Phone"
+        android:inputType="phone"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonMakeDonation"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextAddress"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <EditText
+        android:id="@+id/donationdescript"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="37dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:hint="Donation Description"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/editTextAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textCategory" />
+
+
+</android.support.constraint.ConstraintLayout>
